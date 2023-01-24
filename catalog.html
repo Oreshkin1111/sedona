@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="header__navigation">
+            <div class="container">
+                <div class="header__navigation_part-left">
+                    <img src="./img/logo.png" alt="Логотип Седона" class="header__logo">
+                    <a href="#" class="header__navigation_link">Главная</a>
+                    <a href="#" class="header__navigation_link">О Седоне</a>
+                    <a href="#" class="header__navigation_link">Гостиницы</a>
+                </div>
+                <div class="header__navigation_part_right">
+                    <a href="" class="header__navigation_link-img"><img src="./img/Поиск.svg" alt="Поиск"></a>
+                    <a href="" class="header__navigation_link-img"><img src="./img/favorite.svg" alt="Избранное"></a>
+                    <a href="" class="header__navigation_button">Хочу сюда!</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="catalog__filtering">
+            <div class="container">
+                <div class="catalog__filtering_wrapper">
+                    <h1 class="catalog__filtering_heading">Гостиницы Седоны</h1>
+                    <div class="catalog__filtering_links">
+                        <a href="#"><img src="./img/home 1.svg" alt=""></a>
+                        <a href="" class="filtering__link">Гостиницы</a>
+                    </div>
+                    <div class="filtering__block">
+                        <div class="filtering__checkbox">
+                            <h3 class="filtering__checkbox_heading">Инфраструктура:</h3>
+                            <input type="checkbox" checked class="filtering__checkbox_item">
+                            <input type="checkbox" checked class="filtering__checkbox_item">
+                            <input type="checkbox" class="filtering__checkbox_item">
+                        </div>
+                        <div class="filtering__radio">
+                            <h3 class="filtering__checkbox_heading">Тип жилья:</h3>
+                            <input type="radio" checked class="filtering__radio_item">
+                            <input type="radio" class="filtering__radio_item">
+                            <input type="radio" class="filtering__radio_item">
+                        </div>
+                    </div>
+                    <div class="filtering__block_range">
+                        <div class="filtering__range">
+                            <h3 class="filtering__checkbox_heading">Стоимость, ₽:</h3>
+                            <input type="range" name="" id="">
+                            <input type="range" name="" id="">
+                        </div>
+                        <div class="filtering__block_btn">
+                            <button type="submit" class="btn__blue">Применить</button>
+                            <button type="reset" class="btn__transparent">Сбросить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="search__results">
+            <div class="container">
+                <div class="search__results_selection">
+                    <h2 class="results__selection_heading">Найдено гостиниц: 38</h2>
+                    <select id="selectID">
+                        <option value="">Сначала дешёвые</option>
+                        <button class="result__selection_btn"><img src="./img/mode-tile 1.svg" alt=""></button>
+                        <button class="result__selection_btn"><img src="./img/mode-slideshow 1.svg" alt=""></button>
+                        <button class="result__selection_btn"><img src="./img/mode-list 1.png" alt=""></button>
+                    </select>
+                </div>
+                <div class="results__selection_list">
+                    <div class="result__selection_item">
+                        <img src="emrty" alt="">
+                        <h3 class="selection__item_heading"></h3>
+                        <p class="selection__text"></p>
+                        <p class="selection__text"></p>
+                        <button class="selection_btn_brown"></button>
+                        <button class="selection_btn_blue"></button>
+                        <img src="" alt="4 звезды">
+                        <p class="selection__text_rate"></p>
+                    </div>
+                    <div class="result__selection_item">
+                        <img src="emrty" alt="">
+                        <h3 class="selection__item_heading"></h3>
+                        <p class="selection__text"></p>
+                        <p class="selection__text"></p>
+                        <button class="selection_btn_brown"></button>
+                        <button class="selection_btn_blue"></button>
+                        <img src="" alt="4 звезды">
+                        <p class="selection__text_rate"></p>
+                    </div>
+                    <div class="result__selection_item">
+                        <img src="emrty" alt="">
+                        <h3 class="selection__item_heading"></h3>
+                        <p class="selection__text"></p>
+                        <p class="selection__text"></p>
+                        <button class="selection_btn_brown"></button>
+                        <button class="selection_btn_blue"></button>
+                        <img src="" alt="4 звезды">
+                        <p class="selection__text_rate"></p>
+                    </div>
+                    <div class="result__selection_item">
+                        <img src="emrty" alt="">
+                        <h3 class="selection__item_heading"></h3>
+                        <p class="selection__text"></p>
+                        <p class="selection__text"></p>
+                        <button class="selection_btn_brown"></button>
+                        <button class="selection_btn_blue"></button>
+                        <img src="" alt="4 звезды">
+                        <p class="selection__text_rate"></p>
+                    </div>
+                    <button class="selection__btn_more"></button>
+                </div>
+                <div class="selection__page_bookmarks">
+                    <button class="page__bookmark page__bookmark-light"></button>
+                    <button class="page__bookmark"></button>
+                    <button class="page__bookmark"></button>
+                    <button class="page__bookmark"></button>
+                    <button class="page__bookmark"></button>
+                    <button class="page__bookmark"></button>
+                </div>
+                <div class="selection__page_numbers">
+                    <p class="page__numbers_text"></p>
+                    <select name="" id="">
+                        <option value="4"></option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <section class="main__subscribe">
+            <div class="container">
+                <div class="main__subscribe_wrapper">
+                    <h2 class="main__subscribe_heading">Подпишитесь на рассылку</h2>
+                    <p class="main__subscribe_text">Только полезная информация и никакого спама,
+                        честное бойскаутское!</p>
+                    <div class="main__subscribe_form">
+                        <input type="email" placeholder="Ваш e-mail" class="main__subscribe_input" >
+                        <button>Подписаться</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer__page">
+        <div class="container">
+            <div class="footer__page_wrapper">
+                <div class="social__media_list">
+                    <a href="https://www.facebook.com/htmlacademy" class="social__media_link"><img
+                            src="./img/twitter.svg" alt="Иконка твиттер"></a>
+                    <a href="https://twitter.com/htmlacademy_ru" class="social__media_link"><img
+                            src="./img/facebook.svg" alt="Иконка фейсбук"></a>
+                    <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="social__media_link"><img
+                            src="./img/youtube.svg" alt="Иконка ютуб"></a>
+                    <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+                    <a href=" https://htmlacademy.ru/" class="html-academy__logo_link"><img
+                            src="./img/logo_htmlacademy.svg" alt="Логотип HTML академии"
+                            class="html-academy__logo_image"></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
