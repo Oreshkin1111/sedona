@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
@@ -14,12 +18,12 @@
             <div class="container">
                 <div class="header__navigation_part-left">
                     <img src="./img/logo.png" alt="Логотип Седона" class="header__logo">
-                    <a href="#" class="header__navigation_link">Главная</a>
+                    <a href="./index.html" class="header__navigation_link">Главная</a>
                     <a href="#" class="header__navigation_link">О Седоне</a>
                     <a href="#" class="header__navigation_link">Гостиницы</a>
                 </div>
                 <div class="header__navigation_part_right">
-                    <a href="" class="header__navigation_link-img"><img src="./img/Поиск.svg" alt="Поиск"></a>
+                    <a href="" class="header__navigation_link-img"><img src="./img/search.svg" alt="Поиск"></a>
                     <a href="" class="header__navigation_link-img"><img src="./img/favorite.svg" alt="Избранное"></a>
                     <a href="" class="header__navigation_button">Хочу сюда!</a>
                 </div>
@@ -39,14 +43,20 @@
                         <div class="filtering__checkbox">
                             <h3 class="filtering__checkbox_heading">Инфраструктура:</h3>
                             <input type="checkbox" checked class="filtering__checkbox_item">
+                            <p class="checkbox__text">Бассейн</p>
                             <input type="checkbox" checked class="filtering__checkbox_item">
+                            <p class="checkbox__text">Парковка</p>
                             <input type="checkbox" class="filtering__checkbox_item">
+                            <p class="checkbox__text">Wi-Fi</p>
                         </div>
                         <div class="filtering__radio">
                             <h3 class="filtering__checkbox_heading">Тип жилья:</h3>
                             <input type="radio" checked class="filtering__radio_item">
+                            <p class="checkbox__text">Гостиница</p>
                             <input type="radio" class="filtering__radio_item">
+                            <p class="checkbox__text">Мотель</p>
                             <input type="radio" class="filtering__radio_item">
+                            <p class="checkbox__text">Апартаменты</p>
                         </div>
                     </div>
                     <div class="filtering__block_range">
@@ -69,64 +79,65 @@
                     <h2 class="results__selection_heading">Найдено гостиниц: 38</h2>
                     <select id="selectID">
                         <option value="">Сначала дешёвые</option>
-                        <button class="result__selection_btn"><img src="./img/mode-tile 1.svg" alt=""></button>
-                        <button class="result__selection_btn"><img src="./img/mode-slideshow 1.svg" alt=""></button>
-                        <button class="result__selection_btn"><img src="./img/mode-list 1.png" alt=""></button>
                     </select>
+                    <button class="result__selection_btn"><img src="./img/mode-tile 1.svg" alt=""></button>
+                    <button class="result__selection_btn"><img src="./img/mode-slideshow 1.svg" alt=""></button>
+                    <button class="result__selection_btn"><img src="./img/mode-list 1.png" alt=""></button>
                 </div>
                 <div class="results__selection_list">
                     <div class="result__selection_item">
-                        <img src="emrty" alt="">
-                        <h3 class="selection__item_heading"></h3>
-                        <p class="selection__text"></p>
-                        <p class="selection__text"></p>
-                        <button class="selection_btn_brown"></button>
-                        <button class="selection_btn_blue"></button>
-                        <img src="" alt="4 звезды">
-                        <p class="selection__text_rate"></p>
+                        <img src="./img/Amara.jpg" alt="Amara Resort & Spa">
+                        <h3 class="selection__item_heading">Amara Resort &#38; Spa</h3>
+                        <p class="selection__text">Гостиница</p>
+                        <p class="selection__text">От 4000 ₽</p>
+                        <button class="selection_btn_brown">подробнее</button>
+                        <button class="selection_btn_blue">В избранное</button>
+                        <img src="./img/4stars.svg" alt="4 звезды">
+                        <p class="selection__text_rate">Рейтинг: 8,5</p>
                     </div>
                     <div class="result__selection_item">
-                        <img src="emrty" alt="">
-                        <h3 class="selection__item_heading"></h3>
-                        <p class="selection__text"></p>
-                        <p class="selection__text"></p>
-                        <button class="selection_btn_brown"></button>
-                        <button class="selection_btn_blue"></button>
-                        <img src="" alt="4 звезды">
-                        <p class="selection__text_rate"></p>
+                        <img src="./img/Desert.jpg" alt="Desert Quail Inn">
+                        <h3 class="selection__item_heading">Desert Quail Inn</h3>
+                        <p class="selection__text">Гостиница</p>
+                        <p class="selection__text">От 3000 ₽</p>
+                        <button class="selection_btn_brown">подробнее</button>
+                        <button class="selection_btn_blue">В избранное</button>
+                        <img src="./img/3stars.png" alt="3 звезды">
+                        <p class="selection__text_rate">Рейтинг: 8,9</p>
                     </div>
                     <div class="result__selection_item">
-                        <img src="emrty" alt="">
-                        <h3 class="selection__item_heading"></h3>
-                        <p class="selection__text"></p>
-                        <p class="selection__text"></p>
-                        <button class="selection_btn_brown"></button>
-                        <button class="selection_btn_blue"></button>
-                        <img src="" alt="4 звезды">
-                        <p class="selection__text_rate"></p>
+                        <img src="./img/Villas.jpg" alt="Villas at Poco Diablo">
+                        <h3 class="selection__item_heading">Villas at Poco Diablo</h3>
+                        <p class="selection__text">Гостиница</p>
+                        <p class="selection__text">От 2000 ₽</p>
+                        <button class="selection_btn_brown">подробнее</button>
+                        <button class="selection_btn_blue">В избранное</button>
+                        <img src="./img/2stars.svg" alt="2 звезды">
+                        <p class="selection__text_rate">Рейтинг: 9,2</p>
                     </div>
                     <div class="result__selection_item">
-                        <img src="emrty" alt="">
-                        <h3 class="selection__item_heading"></h3>
-                        <p class="selection__text"></p>
-                        <p class="selection__text"></p>
-                        <button class="selection_btn_brown"></button>
-                        <button class="selection_btn_blue"></button>
-                        <img src="" alt="4 звезды">
+                        <img src="./img/greenTree.png" alt="GreenTree Inn">
+                        <h3 class="selection__item_heading">GreenTree Inn</h3>
+                        <p class="selection__text">Гостиница</p>
+                        <p class="selection__text">От 3000 ₽</p>
+                        <button class="selection_btn_brown">подробнее</button>
+                        <button class="selection_btn_blue">В избранное</button>
+                        <img src="./img/2stars.svg" alt="2 звезды">
+                        <p class="selection__text_rate">Рейтинг: 9,2</p>
                         <p class="selection__text_rate"></p>
                     </div>
-                    <button class="selection__btn_more"></button>
+                    <button class="selection__btn_more">Загрузить ещё</button>
                 </div>
                 <div class="selection__page_bookmarks">
-                    <button class="page__bookmark page__bookmark-light"></button>
-                    <button class="page__bookmark"></button>
-                    <button class="page__bookmark"></button>
-                    <button class="page__bookmark"></button>
-                    <button class="page__bookmark"></button>
-                    <button class="page__bookmark"></button>
+                    <button class="page__bookmark page__bookmark-light">1</button>
+                    <button class="page__bookmark">2</button>
+                    <button class="page__bookmark">3</button>
+                    <button class="page__bookmark">4</button>
+                    <button class="page__bookmark">...</button>
+                    <button class="page__bookmark">10</button>
                 </div>
                 <div class="selection__page_numbers">
-                    <p class="page__numbers_text"></p>
+                    <p class="page__numbers_text">Гостиниц на странице:</p>
                     <select name="" id="">
                         <option value="4"></option>
                     </select>
@@ -140,7 +151,7 @@
                     <p class="main__subscribe_text">Только полезная информация и никакого спама,
                         честное бойскаутское!</p>
                     <div class="main__subscribe_form">
-                        <input type="email" placeholder="Ваш e-mail" class="main__subscribe_input" >
+                        <input type="email" placeholder="Ваш e-mail" class="main__subscribe_input">
                         <button>Подписаться</button>
                     </div>
                 </div>
